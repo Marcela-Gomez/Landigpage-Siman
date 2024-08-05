@@ -1,15 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --vino: #D72323;
+    --gris: #3E3636;
+    --blanco: #F5EDED;
+    --negro: #000000;
+    --titulo: "Inter", sans-serif;
+    --subtitulo: "Roboto Mono", monospace;
+}
+
 .container {
     width: 100%;
     height: 100vh;
-    border: 2px solid red;
+}
+
+.content-inicio {
+    background-image: linear-gradient(rgba(111, 36, 111, 0.286), rgba(150, 131, 145, 0.298)), url('https://res.cloudinary.com/dnc8k8wwv/image/upload/v1722798177/c61yuzna57cwr0c2jwqt.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    color: var(--vino);
+    font-family: var(--titulo);
+    font-size: 6rem;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    color: var(--negro);
+    font-family: var(--subtitulo);
+    margin: 5px 10px 5px 10px;
 }
 
 .navbar {
-    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 15vh;
+    background-color: var(--gris);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: var(--subtitulo);
+}
+
+.content-productos {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--vino);
+    color: var(--blanco);
+    margin: 1rem;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 var(--gris);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.foot {
+    background-color: var(--gris);
+    width: 100%;
+    height: 15vh;
+    color: var(--blanco);
+    font-family: var(--subtitulo);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
