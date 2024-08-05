@@ -52,7 +52,7 @@
     background-color: var(--gris);
 }
 
-a {
+.direccion {
     text-decoration: none;
     cursor: pointer;
     color: var(--blanco);
@@ -60,7 +60,8 @@ a {
     font-family: var(--subtitulo);
 }
 
-.content-productos {
+
+.card-productos {
     display: flex;
     justify-content: center;
 }
@@ -71,9 +72,9 @@ a {
     margin: 1rem;
     border-radius: 12px;
     padding: 1rem;
-    width: 300px;
+    width: 25%;
     box-shadow: 0 4px 8px 0 var(--gris);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--subtitulo);
     text-align: center;
 }
 
@@ -82,6 +83,47 @@ a {
     height: 30vh;
     background-size: cover;
     border-radius: 1rem;
+}
+
+.introduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.descuentos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.descuento {
+    width: 20%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--vino);
+    border-radius: 10px;
+
+}
+
+.descuento-direccion {
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: var(--subtitulo);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.porcentaje {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: var(--subtitulo);
 }
 
 .foot {
